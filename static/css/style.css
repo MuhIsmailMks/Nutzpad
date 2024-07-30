@@ -31,6 +31,10 @@ body {
   -webkit-text-stroke: .5px #192941;
 }
 
+.medium_stroke{
+  -webkit-text-stroke: 1px #192941;
+}
+
 body::-webkit-scrollbar {
   width: 12px; 
   height: 12px;  
@@ -246,6 +250,16 @@ aside {
   background-repeat: no-repeat;
 }
 
+
+
+/* how buy */
+@media (min-width: 1024px) {
+  .stickyside {
+      position: -webkit-sticky;
+      position: sticky;
+      top: 1000px;
+  }
+}
 
 /* media screen  */
 @media screen and (min-width:1800px) {
