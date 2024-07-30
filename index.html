@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="icon" type="image/png" sizes="32x32" href="./static/images/Logo.png">  
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asul:wght@400;700&display=swap" rel="stylesheet">
+    <!-- AOS scroll effect cdn --> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <!-- tailwind css cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- css link -->
+    <link rel="stylesheet" href="./static/css/style.css">
+    <title>Nutzpad</title>
+</head>
+<body> 
+
+ 
+    <div class="max-w-[100%] flex flex-col gap-y-20 items-center relative h-auto min-h-[100vh] overflow-hidden">
+
+        <aside class="texture">
+            <div class="bg ">
+              <img src="./static/images/bg.png" alt="">
+            </div>
+          </aside>
+
+        <!-- navbar -->
+        <nav class="relative h-auto w-full z-[9999] flex_center">
+         
+            <!-- nav  -->
+            <div class="flex_between relative z-10 w-full h-[100px]  px-4 md:px-[2rem] max_width_element"> 
+
+                <div id="menu_btn" class="menu">
+                    <a href="#menu" class="cursor-pointer duration-200 hover:scale-110" >
+                        <img src="./static/images/menu.png" alt="" class="w-auto object-contain h-[25px] md:h-[40px] xl:h-[60px] min-[1800px]:h-[70px]">
+                    </a>
+                </div>
+                
+                <div class="logo absolute left-[50%] translate-x-[-50%]">
+                    <img src="./static/images/Logo.png" alt="" class="w-auto object-contain h-[27px] md:h-[50px] xl:h-[70px]">
+                </div>
+    
+                <div class="social flex_center gap-2 md:gap-4 max-md:hidden">
+                    <a href="#twitter" class="cursor-pointer duration-200 hover:scale-110" >
+                        <img src="./static/images/x_nav.png" alt="" class="w-auto object-contain h-[25px] md:h-[40px] xl:h-[60px] min-[1800px]:h-[70px]">
+                    </a>
+                    <a href="#telegram" class="cursor-pointer duration-200 hover:scale-110" >
+                        <img src="./static/images/tele_nav.png" alt="" class="w-auto object-contain h-[25px] md:h-[40px] xl:h-[60px] min-[1800px]:h-[70px]">
+                    </a>
+                    <a href="#buy" class="relative w-[40px] md:w-[100px]  h-[20px] md:h-[30px] xl:w-[130px] xl:h-[40px] min-[1800px]:w-[160px] min-[1800px]:h-[55px] flex_center button_animation border-[2px] border-[#fffb14]  rounded-r-xl overflow-hidden">
+                        <p class="z-10 relative">BEE</p>
+                        <div class="moving-color_container">
+                            <div class="moving-color">
+                                <span></span>
+                                <span style="animation-delay: 1s;"></span>
+                                <!-- <span style="animation-delay: 1.3s;"></span> -->
+                                <!-- <span style="animation-delay: 1s;"></span>
+                                <span style="animation-delay: 1s;"></span> -->
+                            </div>   
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- menu dropdown -->
+             <div class="menu_drop w-full absolute top-[0%] left-0 flex_center z-[99] ">
+
+                <div class="bg w-full h-full absolute left-0 top-0 z-[-1]">
+                    <img src="./static/images/bg.png" alt="">
+                </div>
+
+                <div id="close_menu" class="close_menu absolute right-6 top-6 md:right-12 md:top-12 border-white border-[2px] lg:h-[58px] min-[1500px]:h-[75px] lg:w-[58px] min-[1500px]:w-[75px] rounded-full  bg-red-600 z-[999] flex_center cursor-pointer">
+                    <img src="./static/images/close.svg" alt="" class="w-[100%] h-auto object-contain relative">
+                </div>
+ 
+                <!-- menu link -->
+                 <div class="w-full h-auto max-[1000px]:items-start flex_center relative z-10 flex-wrap"> 
+
+                    <!-- nav links -->
+                    <ul class="w-[90%] lg:w-[70%] min-[1700px]:w-[64%] max-w-[1400px] h-full   relative flex justify-between flex-wrap gap-3">
+                        <li>
+                            <a href="#about" data-text="ABOUT"> 
+                                <span>about</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#tokenomics" data-text="tokenomics"> 
+                                <span>tokenomics</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#howToBuy" data-text="how to buy"> 
+                                <span>how to buy</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#roadmap" data-text="roadmap"> 
+                                <span>roadmap</span>
+                            </a>
+                        </li> 
+                    </ul>
+
+                    <!-- social -->
+                    <div class="w-full  lg:w-[25%] relative flex_center flex-wrap gap-4"> 
+
+                        <!-- crypto links -->
+
+                        <!-- social media -->
+                        <div class="social flex_center gap-2 md:gap-4 md:hidden">
+                            <a href="#twitter" class="cursor-pointer duration-200 hover:scale-110" >
+                                <img src="./static/images/x_nav.png" alt="" class="w-auto object-contain h-[25px] md:h-[40px] xl:h-[60px] min-[1800px]:h-[70px]">
+                            </a>
+                            <a href="#telegram" class="cursor-pointer duration-200 hover:scale-110" >
+                                <img src="./static/images/tele_nav.png" alt="" class="w-auto object-contain h-[25px] md:h-[40px] xl:h-[60px] min-[1800px]:h-[70px]">
+                            </a>
+                            <a href="#buy" class="relative w-[40px] md:w-[100px]  h-[20px] md:h-[30px] xl:w-[130px] xl:h-[40px] min-[1800px]:w-[160px] min-[1800px]:h-[55px] flex_center button_animation border-[2px] border-[#fffb14]  rounded-r-xl overflow-hidden">
+                                <p class="z-10 relative">BEE</p>
+                                <div class="moving-color_container">
+                                    <div class="moving-color">
+                                        <span></span>
+                                        <span style="animation-delay: 1s;"></span> 
+                                    </div>   
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+
+                 </div>
+
+             </div>
+
+        </nav>
+
+        <!-- hero section -->
+         <section class="flex_center max_width_element">
+            <!-- bg hero -->
+             <img src="./static/images/hero_bg.png" alt="nutz hero" class="w-[95%] h-auto object-contain">
+
+              <!-- plane -->
+             <div class="top-0 w-[95%] h-auto object-contain absolute">
+                <img src="./static/images/Plane.png" alt="nutz hero" class="w-full">
+             </div>
+
+              <!-- wind -->
+             <div class="top-0 w-[95%] h-auto object-contain absolute">
+                <img src="./static/images/Wind.png" alt="nutz hero" class="w-full">
+             </div>
+
+         </section>
+
+        <!-- about section -->
+        <section id="about" class="flex_center max_width_element flex-col">
+             
+            <!-- about image -->
+            <div class="relative w-[95%] h-[100vw] max-h-[2000px] flex_center">
+                
+                <!-- ballon -->
+                <!-- center -->
+                 <div class="w-[45vw] max-w-[900px] h-auto object-contain absolute z-[99]">
+                    <img src="./static/images/ballon1.png" alt=""  class="image_style_animation  ">
+                 </div>
+                
+                 <!-- left -->
+                <div class="w-[20vw] max-w-[400px] h-auto object-contain absolute left-0 z-[1]">
+                    <img src="./static/images/ballon2.png" alt=""  class="image_style_animation">
+                </div>
+             
+                <!-- right -->
+                <div class="w-[20vw] max-w-[400px] h-auto object-contain absolute right-0 z-[1]">
+                    <img src="./static/images/ballon3.png" alt=""  class="image_style_animation">
+                </div>
+               
+                <!-- cloud -->
+                <div class="w-full z-0 h-auto object-contain absolute right-0">
+                    <img src="./static/images/Clouds_Main.png" alt=""  class="image_style_animation">
+                </div>
+
+                 <!-- left -->
+                <div class="w-[40vw] max-w-[700px] h-auto object-contain absolute left-0 z-[3]">
+                    <img src="./static/images/Clouds_left.png" alt=""  class="image_style_animation  absolute">
+                </div>
+
+                 <!-- right -->
+                <div class="w-[70vw] max-w-[600px] h-auto object-contain absolute right-0 z-[3]  ">
+                    <img src="./static/images/Clouds_right.png" alt=""  class="image_style_animation relative">
+                </div>
+
+            </div> 
+
+            <!-- about text -->
+             <div class="w-full md:w-[95%] flex_center">
+                <img src="./static/images/bg_paper.png" alt="paper" class="w-full h-auto object-contain">
+
+                <div class="absolute Bardy_font  w-[80%] md:w-[60%] text-center text-[#fff]   text-[10px] sm:text-[2vw] xl:text-[1.6vw] min-[3000px]:text-[40px]">
+                    <p>
+                        NUTZ ($NUTZ) is a revolutionary token
+                        that was initially launched on the Binance network
+                        and is now evolving to its own blockchain, NUTZchain, uniquely focused on the vibrant and ever-evolving world of memes.
+                    </p>
+                    <br>
+                    <p> 
+                        In an age where memes have become a cultural phenomenon and a powerful form of digital expression,
+                        NUTZ aims to harness this energy
+                        and provide a dedicated platform for meme creators, enthusiasts, and investors.</p>
+                </div>
+             </div>
+
+        </section>
+
+
+        <!-- tokenomics section -->
+         <section id="tokenomics" class="flex_center max_width_element">
+
+            <!-- token image -->
+
+            <!-- token phase -->
+             <div class="w-full flex_center gap-6 h-auto relative flex-wrap">
+
+                <div class="w-[70%] md:w-[40%] xl:w-[30%] flex_center gap-4 flex-col relative">
+
+                    <div class="title flex_center w-full relative">
+                        <img src="./static/images/phase_bg.png" alt="phase" class="w-[90%]">
+                    </div>
+                    <div class="phase_text text-center text-white leading-[1.1] font-bold tracking-wider md:text-[2.5vw] xl:text-[1.5vw] min-[2500px]:text-[40px]">
+                        <p>Phase 1</p>
+                        <p>Token amount: 1.500.000.000</p>
+                        <p>Price per token: $0.0001</p>
+                    </div>
+
+                </div>
+
+                <div class="w-[70%] md:w-[40%] xl:w-[30%] flex_center gap-4 flex-col relative">
+
+                    <div class="title flex_center w-full relative">
+                        <img src="./static/images/phase_bg.png" alt="phase" class="w-[90%]">
+                        <p class="absolute text-white font-bold text-[3.5vw] min-[2500px]:text-[90px]">Phase 2</p>
+                    </div>
+                    <div class="phase_text text-center text-white leading-[1.1] font-bold tracking-wider md:text-[2.5vw] xl:text-[1.5vw] min-[2500px]:text-[40px]">
+                        <p>Phase 2</p>
+                        <p>Token amount: 500.000.000</p>
+                        <p>Price per token: $0.00015</p>
+                    </div>
+
+                </div>
+
+                <div class="w-[70%] md:w-[40%] xl:w-[30%] flex_center gap-4 flex-col relative">
+
+                    <div class="title flex_center w-full relative">
+                        <img src="./static/images/phase_bg.png" alt="phase" class="w-[90%]">
+                    </div>
+                    <div class="phase_text text-center text-white leading-[1.1] font-bold tracking-wider md:text-[2.5vw] xl:text-[1.5vw] min-[2500px]:text-[40px]">
+                        <p>Phase 3 (PinkSale Fair-Launch)</p>
+                        <p>Token amount: 2.500.000.000</p>
+                        <p>Price per token: $0.000225</p>
+                    </div>
+
+                </div>
+
+             </div>
+
+         </section>
+
+    </div>
+
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+     <!-- aos js library animation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+ 
+    <script src="./static/js/index.js"></script>
+</body>
+</html>
