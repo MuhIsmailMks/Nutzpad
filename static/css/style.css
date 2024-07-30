@@ -27,13 +27,6 @@ body {
   font-family: "Bardy", serif;
 }
 
-.thin_stroke{
-  -webkit-text-stroke: .5px #192941;
-}
-
-.medium_stroke{
-  -webkit-text-stroke: 1px #192941;
-}
 
 body::-webkit-scrollbar {
   width: 12px; 
@@ -66,6 +59,19 @@ html{
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+
+.thin_stroke{
+  -webkit-text-stroke: .5px #192941;
+}
+
+.medium_stroke{
+  -webkit-text-stroke: .1vw #192941;
+}
+
+.bold_stroke{
+  -webkit-text-stroke: .3vw #192941;
 }
 
 .max_width_element{
@@ -242,6 +248,7 @@ aside {
 
 
 /* token */
+.bg_paper,
 .phase_text{ 
   width: 100%;
   background-image: url('../images/bg_paper.png'); 
@@ -260,6 +267,16 @@ aside {
       top: 1000px;
   }
 }
+
+/* roadmap */
+.bg_papar_map{ 
+  width: 100%;
+  background-image: url('../images/bg_paper_roadmap.png'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 
 /* media screen  */
 @media screen and (min-width:1800px) {
