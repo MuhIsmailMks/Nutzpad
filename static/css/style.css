@@ -15,7 +15,8 @@
 }
 
 body {
-  font-family: "Tahoma", sans-serif;
+  /* font-family: "Tahoma", sans-serif; */
+  font-family: "Bardy", serif;
 }
 
 .asul_font{
@@ -24,6 +25,10 @@ body {
 
 .Bardy_font{
   font-family: "Bardy", serif;
+}
+
+.thin_stroke{
+  -webkit-text-stroke: .5px #192941;
 }
 
 body::-webkit-scrollbar {
@@ -231,6 +236,15 @@ aside {
   top: -10px;
 }
 
+
+/* token */
+.phase_text{ 
+  width: 100%;
+  background-image: url('../images/bg_paper.png'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
 
 /* media screen  */

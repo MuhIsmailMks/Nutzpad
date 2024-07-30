@@ -19,7 +19,7 @@
 <body> 
 
  
-    <div class="max-w-[100%] flex flex-col gap-y-20 items-center relative h-auto min-h-[100vh] overflow-hidden">
+    <div class="max-w-[100%] flex flex-col gap-y-20 items-center relative  min-h-[100vh] overflow-hidden h-auto pb-[100vw]">
 
         <aside class="texture">
             <div class="bg ">
@@ -214,19 +214,38 @@
 
 
         <!-- tokenomics section -->
-         <section id="tokenomics" class="flex_center max_width_element">
+         <section id="tokenomics" class="flex_center max_width_element flex-col">
 
+            <!-- title -->
+            <div class="w-full flex_center">
+                <img src="./static/images/Tokenomics_title.png" alt="" class="w-full lg:w-[45vw] h-auto object-contain">
+            </div>
             <!-- token image -->
+             <div class="token_image w-full h-auto  max-[1200px]:flex-col flex_between flex-wrap px-[2rem] mt-[-4rem] xl:mt-[-7rem]">
+                <div class="w-[90%] md:w-[400px] min-[1200px]:w-[45%] relative">
+                    <img src="./static/images/Tax.png" alt="" class="w-full h-auto">
+                </div>
+                <div class="w-[90%] md:w-[400px] min-[1200px]:w-[45%] relative">
+                    <img src="./static/images/Liquidity.png" alt="" class="w-full h-auto">
+                </div>
+                <div class="w-[90%] md:w-[400px] min-[1200px]:w-[45%] relative">
+                    <img src="./static/images/Contract.png" alt="" class="w-full h-auto">
+                </div>
+                <div class="w-[90%] md:w-[400px] min-[1200px]:w-[45%] relative">
+                    <img src="./static/images/Supply.png" alt="" class="w-full h-auto">
+                </div>
+             </div>
 
             <!-- token phase -->
-             <div class="w-full flex_center gap-6 h-auto relative flex-wrap">
+             <div class="w-full flex_center gap-[-1rem] md:gap-6 h-auto relative flex-wrap">
 
-                <div class="w-[70%] md:w-[40%] xl:w-[30%] flex_center gap-4 flex-col relative">
+                <div class="w-[80%] md:w-[40%] xl:w-[30%] flex_center xl:gap-4 flex-col relative">
 
                     <div class="title flex_center w-full relative">
-                        <img src="./static/images/phase_bg.png" alt="phase" class="w-[90%]">
+                        <img src="./static/images/Sold.png" alt="phase" class="w-[110%]">
                     </div>
-                    <div class="phase_text text-center text-white leading-[1.1] font-bold tracking-wider md:text-[2.5vw] xl:text-[1.5vw] min-[2500px]:text-[40px]">
+
+                    <div class="phase_text thin_stroke h-[35vw] xl:h-[200px] min-[1500px]:h-[13vw] max-h-[400px] flex_center flex-col relative text-center text-white leading-[1.1] font-bold tracking-wider text-[3.5vw] md:text-[2.5vw] xl:text-[1.2vw] min-[1500px]:text-[1.3vw] min-[2500px]:text-[30px]">
                         <p>Phase 1</p>
                         <p>Token amount: 1.500.000.000</p>
                         <p>Price per token: $0.0001</p>
@@ -234,13 +253,12 @@
 
                 </div>
 
-                <div class="w-[70%] md:w-[40%] xl:w-[30%] flex_center gap-4 flex-col relative">
+                <div class="w-[80%] md:w-[40%] xl:w-[30%] flex_center xl:gap-4 flex-col relative">
 
                     <div class="title flex_center w-full relative">
-                        <img src="./static/images/phase_bg.png" alt="phase" class="w-[90%]">
-                        <p class="absolute text-white font-bold text-[3.5vw] min-[2500px]:text-[90px]">Phase 2</p>
+                        <img src="./static/images/Phase2.png" alt="phase" class="w-[90%]"> 
                     </div>
-                    <div class="phase_text text-center text-white leading-[1.1] font-bold tracking-wider md:text-[2.5vw] xl:text-[1.5vw] min-[2500px]:text-[40px]">
+                    <div class="phase_text thin_stroke h-[35vw] xl:h-[200px] min-[1500px]:h-[13vw] max-h-[400px] flex_center flex-col relative text-center text-white leading-[1.1] font-bold tracking-wider text-[3.5vw] md:text-[2.5vw] xl:text-[1.2vw] min-[1500px]:text-[1.3vw] min-[2500px]:text-[30px]">
                         <p>Phase 2</p>
                         <p>Token amount: 500.000.000</p>
                         <p>Price per token: $0.00015</p>
@@ -248,12 +266,12 @@
 
                 </div>
 
-                <div class="w-[70%] md:w-[40%] xl:w-[30%] flex_center gap-4 flex-col relative">
+                <div class="w-[80%] md:w-[40%] xl:w-[30%] flex_center xl:gap-4 flex-col relative">
 
                     <div class="title flex_center w-full relative">
-                        <img src="./static/images/phase_bg.png" alt="phase" class="w-[90%]">
+                        <img src="./static/images/Phase3.png" alt="phase" class="w-[90%]">
                     </div>
-                    <div class="phase_text text-center text-white leading-[1.1] font-bold tracking-wider md:text-[2.5vw] xl:text-[1.5vw] min-[2500px]:text-[40px]">
+                    <div class="phase_text thin_stroke h-[35vw] xl:h-[200px] min-[1500px]:h-[13vw] max-h-[400px] flex_center flex-col relative text-center text-white leading-[1.1] font-bold tracking-wider text-[3vw] md:text-[2.5vw] xl:text-[1.2vw] min-[1500px]:text-[1.3vw] min-[2500px]:text-[30px]">
                         <p>Phase 3 (PinkSale Fair-Launch)</p>
                         <p>Token amount: 2.500.000.000</p>
                         <p>Price per token: $0.000225</p>
@@ -265,6 +283,10 @@
 
          </section>
 
+        
+         <!-- how to buy section -->
+          <section id="HowToBuy"></section>
+          
     </div>
 
     <!-- gsap -->
