@@ -177,8 +177,7 @@ aside {
   -moz-transition: .4s;
   -ms-transition: .4s;
   -o-transition: .4s;
-  background-color: #496cce;
-  /* mix-blend-mode:exclusion; */
+  background-color: #496cce; 
 
   transform: translateY(-150%);
   -webkit-transform: translateY(-150%);
@@ -215,7 +214,7 @@ aside {
   text-transform: uppercase;
   z-index: 1;  
   letter-spacing: .3vw;
-  font-family: "Asul", serif;
+  /* font-family: "Asul", serif; */
 }
 
 .menu_drop li a span{
