@@ -171,8 +171,8 @@
                 
                 <!-- ballon -->
                 <!-- center -->
-                 <div class="w-[45vw] max-w-[900px] h-auto object-contain absolute z-[99] flex_center">
-                    <img src="./static/images/ballon1.png" alt=""  class="image_style_animation float_animation  relative">
+                 <div class="w-[45vw] max-w-[900px] h-auto object-contain absolute z-[99] flex_center float_animation">
+                    <img src="./static/images/ballon1.png" alt=""  class="image_style_animation   relative">
 
                     <div class="absolute bottom-0 w-[33%] h-[20vw] max-h-[400px] flex flex-col items-center ">
                         <div class="w-full cursor-pointer duration-200 hover:scale-110">
@@ -189,12 +189,12 @@
                  </div>
                 
                  <!-- left -->
-                <div class="w-[20vw] max-w-[400px] h-auto object-contain absolute left-0 z-[1]">
+                <div class="w-[20vw] max-w-[400px] h-auto object-contain absolute left-0 z-[1] ballon_left">
                     <img src="./static/images/ballon2.png" alt=""  class="image_style_animation float_animation" style="animation-delay: -4s;">
                 </div>
              
                 <!-- right -->
-                <div class="w-[20vw] max-w-[400px] h-auto object-contain absolute right-0 z-[1]">
+                <div class="w-[20vw] max-w-[400px] h-auto object-contain absolute right-0 z-[1] ballon_right">
                     <img src="./static/images/ballon3.png" alt=""  class="image_style_animation float_animation" style="animation-delay: -7s;">
                 </div>
                
@@ -204,12 +204,12 @@
                 </div>
 
                  <!-- left -->
-                <div class="w-[40vw] max-w-[700px] h-auto object-contain absolute left-0 z-[3]">
+                <div class="w-[40vw] hidden max-w-[700px] h-auto object-contain absolute left-[-20%] z-[3]">
                     <img src="./static/images/Clouds_left.png" alt=""  class="image_style_animation  absolute">
                 </div>
 
                  <!-- right -->
-                <div class="w-[70vw] max-w-[600px] h-auto object-contain absolute right-0 z-[3]  ">
+                <div class="w-[70vw] hidden max-w-[600px] h-auto object-contain absolute right-0 z-[3]  ">
                     <img src="./static/images/Clouds_right.png" alt=""  class="image_style_animation relative">
                 </div>
 
@@ -274,7 +274,7 @@
             <!-- token image -->
              <div class="token_image w-full h-auto  max-[1200px]:flex-col flex_between flex-wrap px-[2rem] mt-[-4vw] xl:mt-[-7rem]">
 
-                <div class="token_hover w-[80%] md:w-[400px] min-[1200px]:w-[45%] relative flex_center">
+                <div class="token_hover w-[80%] md:w-[400px] min-[1200px]:w-[45%] relative flex_center token1 ml-[-4vw] mt-[-4vw]">
                   
                     <img src="./static/images/Tax.png" alt="" class="w-[80%] lg:w-full h-auto">
 
@@ -285,7 +285,7 @@
 
                 </div>
 
-                <div class="token_hover w-[80%] md:w-[400px] min-[1200px]:w-[45%] relative flex_center">
+                <div class="token_hover w-[80%] md:w-[400px] min-[1200px]:w-[45%] relative flex_center token2 mr-[-4vw] mt-[-4vw]">
                   
                     <img src="./static/images/Liquidity.png" alt="" class="w-[80%] lg:w-full h-auto">
 
@@ -294,7 +294,7 @@
                     </div>
                 </div>
 
-                <div class="token_hover w-[80%] md:w-[400px] min-[1200px]:w-[45%] relative flex_center">
+                <div class="token_hover w-[80%] md:w-[400px] min-[1200px]:w-[45%] relative flex_center token3 ml-[-4vw] mt-[4vw]">
                     
                     <img src="./static/images/Contract.png" alt="" class="w-[80%] lg:w-full h-auto">
 
@@ -311,7 +311,7 @@
                     </div>
                 </div>
 
-                <div class="token_hover w-[80%] md:w-[400px] min-[1200px]:w-[45%] relative flex_center">
+                <div class="token_hover w-[80%] md:w-[400px] min-[1200px]:w-[45%] relative flex_center token4 mr-[-4vw] mt-[4vw]">
                     <img src="./static/images/Supply.png" alt="" class="w-[80%] lg:w-full h-auto">
 
                     <div class="bg_paper w-full h-full absolute medium2_stroke text-white flex_center flex-col scale-0 uppercase text-[3vw] lg:text-[2.1vw] min-[3500px]:text-[2.2vw]">
@@ -324,7 +324,7 @@
             <!-- token phase -->
              <div class="w-full flex_center gap-[-1rem] md:gap-6 h-auto relative flex-wrap">
 
-                <div class="w-[80%] md:w-[40%] xl:w-[32%] flex_center xl:gap-4 flex-col relative">
+                <div class="w-[80%] md:w-[40%] xl:w-[32%] flex_center xl:gap-4 flex-col relative ">
 
                     <div class="title flex_center w-full xl:w-[90%] relative">
                         <img src="./static/images/Sold.png" alt="phase" class="w-[50%] lg:w-[110%]">

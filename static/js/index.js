@@ -68,7 +68,14 @@ copyAddress.addEventListener('click', () => {
 let controller = new ScrollMagic.Controller();
 const animations = [ 
     { selector: ".plane_animation", duration: 4000, x: -200},  
-    // { selector: ".token_images", duration: 4000, x: -100},   
+
+    { selector: ".ballon_left", duration: 4000, x: 100, y:200},  
+    { selector: ".ballon_right", duration: 4000, x: -100, y:200},  
+
+    { selector: ".token1", duration: 4000, x: 150, y:200},  
+    { selector: ".token2", duration: 4000, x: -150, y:200},  
+    { selector: ".token3", duration: 4000, x: 150, y:-200},  
+    { selector: ".token4", duration: 4000, x: -150, y:-200},  
 ];
 
 function adjustXValue() {
@@ -92,7 +99,11 @@ adjustXValue();
 window.addEventListener('resize', adjustXValue);
 
 animations.forEach(animation => { 
-    var tweenParams = { duration: 300 };
+    var tweenParams = { 
+        duration: 1200, 
+        // ease: "power2.inOut" 
+    };
+
     if (animation.hasOwnProperty('x')) {
       tweenParams.x = animation.x;
     }
