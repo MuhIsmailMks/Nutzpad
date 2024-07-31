@@ -179,7 +179,30 @@ const debounceTime = 1000; // 5 seconds
 window.addEventListener('DOMContentLoaded', () => {
    
     let cardImages = [
-        '/static/images/ballon1.png', 
+        './static/images/meme/8-min.jpg', 
+        './static/images/meme/9-min.jpg', 
+        './static/images/meme/10-min.jpg', 
+        './static/images/meme/11-min.jpg', 
+        './static/images/meme/13-min.jpg', 
+        './static/images/meme/14-min.jpg', 
+        './static/images/meme/15-min.jpg', 
+        './static/images/meme/16-min.jpg', 
+        './static/images/meme/17-min.jpg', 
+        './static/images/meme/18-min.jpg', 
+        './static/images/meme/19-min.jpg', 
+        './static/images/meme/20-min.jpg', 
+        './static/images/meme/21-min.jpg', 
+        './static/images/meme/24-min.jpg', 
+        './static/images/meme/browser1.jpg', 
+        './static/images/meme/browser2.png', 
+        './static/images/meme/browser3.png', 
+        './static/images/meme/browser4.png', 
+        './static/images/meme/browser5.png', 
+        './static/images/meme/browser6.jpg', 
+        './static/images/meme/browser6.png', 
+        './static/images/meme/gallery1.jpg', 
+        './static/images/meme/gallery2.png', 
+        './static/images/meme/token_right.jpg', 
     ];
   
     function cardRandom(){
