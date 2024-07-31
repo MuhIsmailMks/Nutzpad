@@ -77,7 +77,7 @@ const animations = [
     { selector: ".token3", duration: 4000, x: 150, y:-200},  
     { selector: ".token4", duration: 4000, x: -150, y:-200},  
   
-    { selector: ".stickyside", duration: 4000, x: 0, y:400},  
+    { selector: ".stickyside", duration: 6000,   y:400},  
 
     { selector: ".image_roadmap_title", duration: 4000, x: 0, y:200},  
     { selector: ".image_roadmap", duration: 4000, x: 0, y:300},  
@@ -86,8 +86,7 @@ const animations = [
     { selector: ".map3", duration: 5000, x: 0, y:-300},  
     
     
-    { selector: ".card_container", duration: 7000, x: -850, y:0, offset: -200 },  
-
+    { selector: ".card_container", duration: 7000, x: -850, y:0, offset: -200 },   
 
 ];
 
@@ -107,10 +106,7 @@ function adjustXValue() {
       });
     }
 }
-
-// adjustXValue();
-// window.addEventListener('resize', adjustXValue);
-
+ 
 adjustXValue();
 window.addEventListener('resize', () => {
     requestAnimationFrame(adjustXValue);
@@ -118,8 +114,7 @@ window.addEventListener('resize', () => {
 
 animations.forEach(animation => { 
     var tweenParams = { 
-        duration: 1000, 
-        // ease: "power2.inOut" 
+        duration: 1000,  
     };
 
     if (animation.hasOwnProperty('x')) {
@@ -131,7 +126,6 @@ animations.forEach(animation => {
     if (animation.hasOwnProperty('rotate')) {
       tweenParams.rotate = animation.rotate;
     }
-    
 
     var tween = gsap.to(animation.selector, tweenParams);
 
@@ -141,7 +135,7 @@ animations.forEach(animation => {
     };
 
     if (animation.hasOwnProperty('offset')) {
-        sceneParams.offset = animation.offset; // Menambahkan offset jika ada
+        sceneParams.offset = animation.offset;  
     }
 
     var scene = new ScrollMagic.Scene({
