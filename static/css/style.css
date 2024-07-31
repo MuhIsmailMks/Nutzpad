@@ -253,6 +253,20 @@ aside {
   top: -10px;
 }
 
+.close_menu{
+  transition: .3s ease-in-out;
+  -webkit-transition: .3s ease-in-out;
+  -moz-transition: .3s ease-in-out;
+  -ms-transition: .3s ease-in-out;
+  -o-transition: .3s ease-in-out;
+}
+
+.close_menu:hover{
+  
+  box-shadow: -10px 10px 2px black; 
+}
+
+/* bg */
  
 .bg_paper,
 .phase_text{ 
