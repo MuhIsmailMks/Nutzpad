@@ -593,16 +593,19 @@ aside {
 
 /* cloud animation */
 .moveClouds{
-  animation: moveClouds 30s linear infinite;
-  -webkit-animation: moveClouds 30s linear infinite;
+  animation: moveClouds 24s linear infinite;
+  -webkit-animation: moveClouds 24s linear infinite;
 }
 
 @keyframes moveClouds {
   0% {
     left: -50px;
   }
-  50% {
-    left: calc(100% - 50px);
+  30% {
+    left: calc(20% - 50px);
+  }
+  60% {
+    left: calc(-20% - 50px);
   }
   100% {
     left: -50px;
