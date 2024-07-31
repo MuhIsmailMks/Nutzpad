@@ -70,6 +70,10 @@ html{
   -webkit-text-stroke: .1vw #192941;
 }
 
+.medium2_stroke{
+  -webkit-text-stroke: .2vw #192941;
+}
+
 .bold_stroke{
   -webkit-text-stroke: .3vw #192941;
 }
@@ -219,6 +223,7 @@ aside {
   position: relative; 
 
   -webkit-background-clip: text;
+  background-clip: text;
   display: inline-flex;
   background: linear-gradient(180deg, #FBD544 41.75%, #FC940F 65.71%); 
   background-clip: text; 
@@ -246,8 +251,7 @@ aside {
   top: -10px;
 }
 
-
-/* token */
+ 
 .bg_paper,
 .phase_text{ 
   width: 100%;
@@ -257,7 +261,36 @@ aside {
   background-repeat: no-repeat;
 }
 
+#tokenomics .bg_paper{
+  background-size: contain;
+}
 
+/* token */
+.token_hover{
+  cursor: pointer;
+}
+
+.token_hover .bg_paper{
+  transform: scale(0);
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  
+  transition: .3s ease-in-out;
+  -webkit-transition: .3s ease-in-out;
+  -moz-transition: .3s ease-in-out;
+  -ms-transition: .3s ease-in-out;
+  -o-transition: .3s ease-in-out;
+}
+
+.token_hover:hover .bg_paper{
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+}
 
 /* how buy */
 @media (min-width: 1024px) {
