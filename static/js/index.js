@@ -76,6 +76,16 @@ const animations = [
     { selector: ".token2", duration: 4000, x: -150, y:200},  
     { selector: ".token3", duration: 4000, x: 150, y:-200},  
     { selector: ".token4", duration: 4000, x: -150, y:-200},  
+ 
+    // { selector: ".image_roadmap", duration: 10000, x: 0, y:1400},  
+    { selector: ".map1", duration: 4000, x: 0, y:-500},  
+    { selector: ".map2", duration: 4500, x: 0, y:-400},  
+    { selector: ".map3", duration: 5000, x: 0, y:-300},  
+    
+    
+    { selector: ".card_container", duration: 5000, x: -750, y:0},  
+
+
 ];
 
 function adjustXValue() {
@@ -95,12 +105,17 @@ function adjustXValue() {
     }
 }
 
+// adjustXValue();
+// window.addEventListener('resize', adjustXValue);
+
 adjustXValue();
-window.addEventListener('resize', adjustXValue);
+window.addEventListener('resize', () => {
+    requestAnimationFrame(adjustXValue);
+});
 
 animations.forEach(animation => { 
     var tweenParams = { 
-        duration: 1200, 
+        duration: 1000, 
         // ease: "power2.inOut" 
     };
 
@@ -118,9 +133,10 @@ animations.forEach(animation => {
 
     var scene = new ScrollMagic.Scene({
       triggerElement: animation.selector,
-      duration: animation.duration
+      duration: animation.duration,
+      offset: -200
     })
     .setTween(tween)
     .addTo(controller);
 });
-
+ 
