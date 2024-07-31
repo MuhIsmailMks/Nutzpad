@@ -77,7 +77,7 @@ const animations = [
     { selector: ".token3", duration: 4000, x: 150, y:-200},  
     { selector: ".token4", duration: 4000, x: -150, y:-200},  
   
-    { selector: ".stickyside", duration: 6000,   y:400},  
+    { selector: ".stickyside", duration: 6000,   y:600},  
 
     { selector: ".image_roadmap_title", duration: 4000, x: 0, y:200},  
     { selector: ".image_roadmap", duration: 4000, x: 0, y:300},  
@@ -144,12 +144,6 @@ animations.forEach(animation => {
     .setTween(tween)
     .addTo(controller);
 });
- 
-
-
-
-
-
 
 
 
