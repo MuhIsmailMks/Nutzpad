@@ -58,3 +58,58 @@ copyAddress.addEventListener('click', () => {
     });
 
 })
+
+
+
+// animation
+
+// animation scroll effect
+// controller ScrollMagic
+let controller = new ScrollMagic.Controller();
+const animations = [ 
+    { selector: ".plane_animation", duration: 4000, x: -200},  
+    // { selector: ".token_images", duration: 4000, x: -100},   
+];
+
+function adjustXValue() {
+    const screenWidth = window.innerWidth;
+    if (screenWidth > 1200) { 
+      animations.forEach(animation => {
+        if (animation.hasOwnProperty('x')) {  
+          animation.x = animation.x * 4;
+        }
+        if (animation.hasOwnProperty('y')) { 
+          animation.y = animation.y * 2;
+        } 
+        if (animation.hasOwnProperty('rotate')) {
+          animation.rotate = animation.rotate * 1; 
+        }
+      });
+    }
+}
+
+adjustXValue();
+window.addEventListener('resize', adjustXValue);
+
+animations.forEach(animation => { 
+    var tweenParams = { duration: 300 };
+    if (animation.hasOwnProperty('x')) {
+      tweenParams.x = animation.x;
+    }
+    if (animation.hasOwnProperty('y')) {
+      tweenParams.y = animation.y;
+    }
+    if (animation.hasOwnProperty('rotate')) {
+      tweenParams.rotate = animation.rotate;
+    }
+    
+    var tween = gsap.to(animation.selector, tweenParams);
+
+    var scene = new ScrollMagic.Scene({
+      triggerElement: animation.selector,
+      duration: animation.duration
+    })
+    .setTween(tween)
+    .addTo(controller);
+});
+

@@ -582,12 +582,19 @@ aside {
   0% {
     transform: translateY(0);
   }
-  50% {
+  30% {
     transform: translateY(-5vw);
     -webkit-transform: translateY(-5vw);
     -moz-transform: translateY(-5vw);
     -ms-transform: translateY(-5vw);
     -o-transform: translateY(-5vw);
+  }
+  70% {
+    transform: translateY(5vw);
+    -webkit-transform: translateY(5vw);
+    -moz-transform: translateY(5vw);
+    -ms-transform: translateY(5vw);
+    -o-transform: translateY(5vw);
 }
   100% {
     transform: translateY(0);

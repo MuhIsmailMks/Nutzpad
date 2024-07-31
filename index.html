@@ -37,9 +37,15 @@
             <!-- nav  -->
             <div class="flex_between relative z-10 w-full h-[70px] md:h-[100px]  px-4 md:px-[2rem] max_width_element"> 
 
-                <div id="menu_btn" class="menu">
-                    <a href="#menu" class="cursor-pointer duration-200 hover:scale-110" >
+                <div  class="menu flex_center gap-[1.5vw]">
+                    <a id="menu_btn" href="#menu" class="cursor-pointer duration-200 hover:scale-110" >
                         <img src="./static/images/menu.png" alt="" class="w-auto object-contain h-[25px] md:h-[40px] xl:h-[60px] min-[1800px]:h-[70px]">
+                    </a>
+                    <a href="#paper" class="cursor-pointer duration-200 hover:scale-110 relative flex_center" >
+
+                        <img src="./static/images/cloud_social.png" alt="" class="w-auto object-contain h-[25px] md:h-[40px] xl:h-[60px] min-[1800px]:h-[70px] relative">
+
+                        <img src="./static/images/svg/btnPaper.svg" alt="" class="w-[30%] h-auto object-contain absolute z-10">
                     </a>
                 </div>
                 
@@ -54,8 +60,8 @@
                     <a href="https://telegram.org/" target="_blank" class="cursor-pointer duration-200 hover:scale-110" >
                         <img src="./static/images/tele_nav.png" alt="" class="w-auto object-contain h-[25px] md:h-[40px] xl:h-[60px] min-[1800px]:h-[70px]">
                     </a>
-                    <a href="#buy" class="relative  md:w-[100px]  md:h-[30px] xl:w-[130px] xl:h-[40px] min-[1800px]:w-[160px] min-[1800px]:h-[55px] flex_center button_animation border-[3px] border-[#fffb14]  rounded-r-xl overflow-hidden duration-200 hover:scale-110">
-                        <p class="z-10 relative  uppercase">whitepaper</p>
+                    <a href="#buy" class="relative  md:w-[100px]  md:h-[30px] xl:w-[130px] xl:h-[40px] min-[1800px]:w-[160px] min-[1800px]:h-[55px] flex_center button_animation border-[3px] border-[#fffb14]  rounded-r-xl overflow-hidden duration-200 hover:scale-110 hidden">
+                        <p class="z-10 relative  uppercase text-white thin_stroke">whitepaper</p>
                         <div class="moving-color_container">
                             <div class="moving-color">
                                 <span></span>
@@ -122,7 +128,7 @@
                                 <img src="./static/images/tele_nav.png" alt="" class="w-auto object-contain h-[10vw]  ">
                             </a>
                             <a href="#buy" class="relative w-[100px] md:w-[100px]  h-[30px]  xl:w-[130px] flex_center button_animation border-[2px] border-[#fffb14]  rounded-r-xl overflow-hidden">
-                                <p class="z-10 relative text-[12px]">whitepaper</p>
+                                <p class="z-10 relative text-[12px]  text-white thin_stroke">whitepaper</p>
                                 <div class="moving-color_container">
                                     <div class="moving-color">
                                         <span></span>
@@ -146,13 +152,13 @@
              <img src="./static/images/hero_bg.png" alt="nutz hero" class="w-[95%] h-auto object-contain">
 
               <!-- plane -->
-             <div class="top-0 w-[95%] h-auto object-contain absolute">
-                <img src="./static/images/Plane.png" alt="nutz hero" class="w-full">
+             <div class="top-0 w-[95%] h-auto object-contain absolute plane_animation">
+                <img src="./static/images/Plane.png" alt="nutz hero" class="w-full float_animation " style="animation-delay: -5s;">
              </div>
 
               <!-- wind -->
              <div class="top-0 w-[95%] h-auto object-contain absolute">
-                <img src="./static/images/Wind.png" alt="nutz hero" class="w-full">
+                <img src="./static/images/Wind.png" alt="nutz hero" class="w-full float_animation">
              </div>
 
          </section>
@@ -166,7 +172,7 @@
                 <!-- ballon -->
                 <!-- center -->
                  <div class="w-[45vw] max-w-[900px] h-auto object-contain absolute z-[99] flex_center">
-                    <img src="./static/images/ballon1.png" alt=""  class="image_style_animation  relative">
+                    <img src="./static/images/ballon1.png" alt=""  class="image_style_animation float_animation  relative">
 
                     <div class="absolute bottom-0 w-[33%] h-[20vw] max-h-[400px] flex flex-col items-center ">
                         <div class="w-full cursor-pointer duration-200 hover:scale-110">
@@ -184,12 +190,12 @@
                 
                  <!-- left -->
                 <div class="w-[20vw] max-w-[400px] h-auto object-contain absolute left-0 z-[1]">
-                    <img src="./static/images/ballon2.png" alt=""  class="image_style_animation">
+                    <img src="./static/images/ballon2.png" alt=""  class="image_style_animation float_animation" style="animation-delay: -4s;">
                 </div>
              
                 <!-- right -->
                 <div class="w-[20vw] max-w-[400px] h-auto object-contain absolute right-0 z-[1]">
-                    <img src="./static/images/ballon3.png" alt=""  class="image_style_animation">
+                    <img src="./static/images/ballon3.png" alt=""  class="image_style_animation float_animation" style="animation-delay: -7s;">
                 </div>
                
                 <!-- cloud -->
@@ -296,8 +302,10 @@
                         <p class="hidden copy-box__text">000000000000000000000000000dead</p>
                         <h1 class=" copy-box__btn">00000000000000000000000..00000</h1> 
 
-                        <span class="relative copy-box cursor-pointer duration-200 hover:scale-110">
-                            <img src="./static/images/menu.png" alt="" class="w-[10vw] lg:w-[5vw]">
+                        <span class="relative flex_center copy-box cursor-pointer duration-200 hover:scale-110">
+                            <img src="./static/images/cloud_social.png" alt="" class="w-[10vw] lg:w-[7vw] relative">
+
+                            <img src="./static/images/svg/copy_icon.svg" alt="" class="w-[20%]   absolute">
                         </span>
 
                     </div>
@@ -697,6 +705,10 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- gsap -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <!-- scroll magic -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
      <!-- aos js library animation -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
  
