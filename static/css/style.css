@@ -659,6 +659,40 @@ aside {
 }
 
 
+.float_animation_heli{
+  animation: float_heli 10s ease-in-out infinite;
+  -webkit-animation: float_heli 10s ease-in-out infinite;
+}
+
+@keyframes float_heli {
+  0%,100% {
+    transform: translateY(0);
+  } 
+  50% {
+    transform: translateY(30vw);
+    -webkit-transform: translateY(30vw);
+    -moz-transform: translateY(30vw);
+    -ms-transform: translateY(30vw);
+    -o-transform: translateY(30vw);
+} 
+}
+
+@media screen and (max-width:1000px) {
+  @keyframes float_heli {
+    0%,100% {
+      transform: translateY(0);
+    } 
+    50% {
+      transform: translateY(110vw);
+      -webkit-transform: translateY(110vw);
+      -moz-transform: translateY(110vw);
+      -ms-transform: translateY(110vw);
+      -o-transform: translateY(110vw);
+} 
+  }
+  
+}
+
 
 /* cards */
 
@@ -693,7 +727,7 @@ aside {
   position: absolute;
   left: 5%;
   height: 80%;
-  width: 300px;
+  width: 320px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -703,6 +737,11 @@ aside {
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
+
+  background-image: url('../images/bg_card_random.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .cards_random img {
@@ -781,7 +820,11 @@ aside {
 
   width: 120%;
   height: 100%;
-  background-color: #FF6F6F; 
+  
+  background-image: url('../images/bg_card.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .card-front h2{
@@ -789,7 +832,7 @@ aside {
   position: relative;
 }
 
-.cards_random::before,
+/* .cards_random::before,
 .card-front::before{
   content: "";
   position: absolute;
@@ -807,7 +850,7 @@ aside {
   background-size: cover;
   background-repeat: no-repeat;
   -webkit-animation: zoom_in 20s linear infinite; 
-}
+} */
 
 @keyframes zoom_in {
   0%,100%{
