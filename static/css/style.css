@@ -437,12 +437,7 @@ aside {
   transform: scale(1); 
 }
 
-/* how buy */
-@media (min-width: 1024px) {
-  .stickyside {
-  }
-}
-
+/* how buy */ 
 .stickyside {
   position: -webkit-sticky;
   position: sticky; 
@@ -796,8 +791,7 @@ aside {
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
-  border-radius: 15px;
+  overflow: hidden; 
   transition: 0.2s ease-in-out;
   cursor: pointer;
   -webkit-transition: 0.2s ease-in-out;
@@ -830,27 +824,7 @@ aside {
 .card-front h2{
   z-index: 10;
   position: relative;
-}
-
-/* .cards_random::before,
-.card-front::before{
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  
-  background-color: #110303;
-  
-  mix-blend-mode:darken;
-  animation: zoom_in 20s linear infinite;
-  background-image: url('../images/bg.png');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  -webkit-animation: zoom_in 20s linear infinite; 
-} */
+} 
 
 @keyframes zoom_in {
   0%,100%{
