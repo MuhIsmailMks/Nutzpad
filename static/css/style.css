@@ -798,15 +798,15 @@ aside {
   left: 0;
   top: 0;
   
-  background-color: #001c46;
+  background-color: #FF6F6F;
   
-  mix-blend-mode:darken;
+  /* mix-blend-mode:darken;
   animation: zoom_in 20s linear infinite;
   background-image: url('../images/bg.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  -webkit-animation: zoom_in 20s linear infinite;
+  -webkit-animation: zoom_in 20s linear infinite; */
 }
 
 @keyframes zoom_in {
