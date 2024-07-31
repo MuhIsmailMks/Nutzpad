@@ -17,3 +17,21 @@ close_menu.addEventListener('click', () => {
     menu_drop.classList.remove('active')
 })
  
+
+
+      // swiper js
+      const swiper1 = new Swiper('#swiper1', { 
+        direction: 'horizontal',
+        loop: true,
+        
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+
+        // Menambahkan efek fade
+        effect: 'fade',
+        fadeEffect: {
+            crossFade: true
+        }
+    });
