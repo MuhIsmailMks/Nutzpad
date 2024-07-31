@@ -74,6 +74,10 @@ html{
   -webkit-text-stroke: .2vw #192941;
 }
 
+.ca_stroke{
+  -webkit-text-stroke: .15vw #192941;
+}
+
 .bold_stroke{
   -webkit-text-stroke: .3vw #192941;
 }
