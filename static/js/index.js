@@ -69,8 +69,8 @@ let controller = new ScrollMagic.Controller();
 const animations = [ 
     { selector: ".plane_animation", duration: 4000, x: -200},  
 
-    { selector: ".ballon_left", duration: 4000, x: 100, y:200},  
-    { selector: ".ballon_right", duration: 4000, x: -100, y:200},  
+    { selector: ".ballon_left", duration: 4000, x: -100, y:200},  
+    { selector: ".ballon_right", duration: 4000, x: 100, y:200},  
 
     { selector: ".token1", duration: 4000, x: 150, y:200},  
     { selector: ".token2", duration: 4000, x: -150, y:200},  
@@ -79,6 +79,7 @@ const animations = [
   
     { selector: ".stickyside", duration: 4000, x: 0, y:400},  
 
+    { selector: ".image_roadmap_title", duration: 4000, x: 0, y:200},  
     { selector: ".image_roadmap", duration: 4000, x: 0, y:300},  
     { selector: ".map1", duration: 4000, x: 0, y:-500},  
     { selector: ".map2", duration: 4500, x: 0, y:-400},  
