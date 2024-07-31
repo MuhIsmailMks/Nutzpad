@@ -77,12 +77,15 @@ const animations = [
     { selector: ".token3", duration: 4000, x: 150, y:-200},  
     { selector: ".token4", duration: 4000, x: -150, y:-200},  
   
+    { selector: ".stickyside", duration: 4000, x: 0, y:400},  
+
+    { selector: ".image_roadmap", duration: 4000, x: 0, y:300},  
     { selector: ".map1", duration: 4000, x: 0, y:-500},  
     { selector: ".map2", duration: 4500, x: 0, y:-400},  
     { selector: ".map3", duration: 5000, x: 0, y:-300},  
     
     
-    { selector: ".card_container", duration: 5000, x: -850, y:0, offset: -200 },  
+    { selector: ".card_container", duration: 7000, x: -850, y:0, offset: -200 },  
 
 
 ];
