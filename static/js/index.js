@@ -83,10 +83,7 @@ const animations = [
     { selector: ".image_roadmap", duration: 4000, x: 0, y:300},  
     { selector: ".map1", duration: 4000, x: 0, y:-500},  
     { selector: ".map2", duration: 4500, x: 0, y:-400},  
-    { selector: ".map3", duration: 5000, x: 0, y:-300},  
-    
-    
-    { selector: ".card_container", duration: 7000, x: -850, y:0, offset: -200 },   
+    { selector: ".map3", duration: 5000, x: 0, y:-300},    
 
 ];
 
@@ -148,3 +145,127 @@ animations.forEach(animation => {
     .addTo(controller);
 });
  
+
+
+
+
+
+
+
+
+
+
+// memes
+const randomBtn = document.querySelector(".cards_random");
+const cards = document.querySelectorAll(".card .card-inner"); 
+const imageCards = document.querySelectorAll(".card .card-back");
+const aboutCards = document.querySelectorAll(".about_card");
+const cards_container_slide = document.querySelector(".cards_container_slide");
+
+const card1 = document.querySelector(".card._1 .card-back img");
+const card2 = document.querySelector(".card._2 .card-back img");
+const card3 = document.querySelector(".card._3 .card-back img");
+const card4 = document.querySelector(".card._4 .card-back img");
+
+const close_popUp = document.querySelector(".close_popUp");
+const popUp_image = document.querySelector(".popUp_image");
+const image_popUp = document.querySelector(".image_popUp");
+  
+
+let isClickable = true;
+const debounceTime = 1000; // 5 seconds
+
+// card random function
+window.addEventListener('DOMContentLoaded', () => {
+   
+    let cardImages = [
+        '/static/images/ballon1.png', 
+    ];
+  
+    function cardRandom(){
+
+        function shuffle(array) {
+                let currentIndex = array.length, randomIndex;
+            
+                while (currentIndex != 0) {
+            
+                    randomIndex = Math.floor(Math.random() * currentIndex);
+                    currentIndex--;
+            
+                    [array[currentIndex], array[randomIndex]] = [
+                        array[randomIndex], array[currentIndex]];
+                }
+
+                    return array;
+        } 
+        
+
+        let shuffledCardImage = shuffle(cardImages);
+        let selectedImages = shuffledCardImage.slice(0, 4);
+
+        cards_container_slide.classList.toggle('remove');
+
+        if(cards_container_slide.classList.contains('remove')){
+            cards_container_slide.style.transform = "translateX(-110%)";
+            
+        } else {
+            cards_container_slide.style.transform = "translateX(0%)"; 
+
+            cards.forEach(card => { 
+                    let cardClosest = card.closest('.card')
+                    cardClosest.classList.remove('is-flipped');   
+            })
+            
+
+            card1.src = selectedImages[0]
+            card2.src = selectedImages[1]
+            card3.src = selectedImages[2]
+            card4.src = selectedImages[3]   
+            
+             aboutCards.forEach((cardBtn,i) => { 
+                cardBtn.dataset.set = selectedImages[i];
+            })
+        }
+
+    }
+ 
+
+    setTimeout(()=>{
+        cards_container_slide.style.transform = "translateX(0%)"; 
+    },1000)
+
+    randomBtn.addEventListener('click', () => {
+              
+        if (!isClickable) return;
+        isClickable = false;
+
+           setTimeout(() => {
+            isClickable = true;
+        }, debounceTime); 
+        cardRandom()
+
+    
+    });
+
+    cards.forEach(card => {
+            card.addEventListener('click', () => {
+                let cardClosest = card.closest('.card')
+                const cardAttr = cardClosest.getAttribute('data-set'); 
+                cardClosest.classList.add('is-flipped');
+                
+                console.log(cardAttr);
+ 
+ 
+                popUp_image.classList.remove('hidden');
+                image_popUp.setAttribute('src', cardAttr)
+
+            })
+    });
+
+   
+
+    close_popUp.addEventListener('click', () => {
+      popUp_image.classList.add('hidden')
+    })
+ 
+})
