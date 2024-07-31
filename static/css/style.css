@@ -430,6 +430,7 @@ aside {
   position: -webkit-sticky;
   position: sticky; 
   top: 0;
+  background-color: red;
 }
 
 /* roadmap */
@@ -441,9 +442,43 @@ aside {
   background-repeat: no-repeat;
 }
 
+/* card */
+.card::before{
+  animation: winAni3 1s ease-in-out .1s infinite;
+  left: 20px;
+  top: -20px;
+  -webkit-animation: winAni3 1s ease-in-out .1s infinite;
+}
+
+.card::after{
+  animation: winAni3 1s ease-in-out infinite;
+  left: 12.5px;
+  top: -12.5px;
+  -webkit-animation: winAni3 1s ease-in-out infinite;
+}
+.card::after,
+.card::before{
+  background-color: inherit;
+  border: inherit;
+  border-radius: inherit;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+
+@keyframes winAni3 {
+  0%, 100% {
+    transform: translate(0);
+}
+50% {
+    transform: translate(-10%, 10%) scale(.9);
+}
+}
+
 /* footer */
-
-
 .by_stroke{
   -webkit-text-stroke: .1vw #6D1500;
 }
