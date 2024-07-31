@@ -115,6 +115,8 @@ window.addEventListener('resize', () => {
 animations.forEach(animation => { 
     var tweenParams = { 
         duration: 1000,  
+        // ease: "power1"  
+        ease: "power1"
     };
 
     if (animation.hasOwnProperty('x')) {
