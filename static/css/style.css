@@ -223,11 +223,11 @@ aside {
   position: relative; 
 
   -webkit-background-clip: text;
-  background-clip: text;
-  display: inline-flex;
+  background-clip: text; 
   background: linear-gradient(180deg, #FBD544 41.75%, #FC940F 65.71%); 
   background-clip: text; 
   color: transparent;   
+  display: inline;
 }
 
 .menu_drop li a::after {
