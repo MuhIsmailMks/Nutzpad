@@ -277,6 +277,13 @@ aside {
   background-repeat: no-repeat;
 }
 
+/* footer */
+
+
+.by_stroke{
+  -webkit-text-stroke: .1vw #6D1500;
+}
+
 
 /* media screen  */
 @media screen and (min-width:1800px) {
