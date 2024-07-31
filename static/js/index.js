@@ -83,7 +83,7 @@ const animations = [
     { selector: ".map3", duration: 5000, x: 0, y:-300},  
     
     
-    { selector: ".card_container", duration: 5000, x: -750, y:0},  
+    { selector: ".card_container", duration: 5000, x: -850, y:0, offset: -200 },  
 
 
 ];
@@ -129,12 +129,21 @@ animations.forEach(animation => {
       tweenParams.rotate = animation.rotate;
     }
     
+
     var tween = gsap.to(animation.selector, tweenParams);
+
+    let sceneParams = {
+        triggerElement: animation.selector,
+        duration: animation.duration
+    };
+
+    if (animation.hasOwnProperty('offset')) {
+        sceneParams.offset = animation.offset; // Menambahkan offset jika ada
+    }
 
     var scene = new ScrollMagic.Scene({
       triggerElement: animation.selector,
-      duration: animation.duration,
-      offset: -200
+      duration: animation.duration, 
     })
     .setTween(tween)
     .addTo(controller);

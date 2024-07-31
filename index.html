@@ -152,7 +152,7 @@
              <img src="./static/images/hero_bg.png" alt="nutz hero" class="w-[95%] h-auto object-contain">
 
               <!-- plane -->
-             <div class="top-0 w-[95%] h-auto object-contain absolute plane_animation">
+             <div class="top-0 w-[95%] h-auto object-contain absolute max-lg:ml-[20vw] plane_animation">
                 <img src="./static/images/Plane.png" alt="nutz hero" class="w-full float_animation " style="animation-delay: -5s;">
              </div>
 
@@ -299,8 +299,8 @@
                     <img src="./static/images/Contract.png" alt="" class="w-[80%] lg:w-full h-auto">
 
                     <div class="bg_paper w-full h-full absolute medium2_stroke text-white flex_center flex-col scale-0 uppercase text-[2vw] lg:text-[1.4vw] font-thin min-[3500px]:text-[2.2vw] gap-[2vw]">
-                        <p class="hidden copy-box__text">000000000000000000000000000dead</p>
-                        <h1 class=" copy-box__btn">00000000000000000000000..00000</h1> 
+                        <p class="hidden copy-box__text">0x253855BE0319c6941626DDE3c24ba717e570aE3B</p>
+                        <h1 class=" copy-box__btn">0x253855BE0319c6941..a717e570aE3B</h1> 
 
                         <span class="relative flex_center copy-box cursor-pointer duration-200 hover:scale-110">
                             <img src="./static/images/cloud_social.png" alt="" class="w-[10vw] lg:w-[7vw] relative">
@@ -373,57 +373,62 @@
          <!-- how to buy section -->
           <section id="HowToBuy" class=" flex items-start justify-center flex-row w-full max-lg:flex-col h-auto mt-[10vw]">
 
-            <div class="stickyside w-full lg:w-[50%] flex_center flex-col">
-               <div class="w-[80%] lg:w-full">
-                <img src="./static/images/How_tobuy.png" alt="" class="w-full h-auto object-contain">
-               </div>
-               <div class="w-full">
-                <img src="./static/images/Heli.png" alt="" class="w-full h-auto object-contain">
-               </div>
-            </div>
+            <div class="flex justify-center items-start flex-wrap">
 
-            <div class="relative w-full lg:w-[50%] flex_center flex-col max-lg:gap-[2vw]">
-
-                <!-- map1 -->
-                <div class="w-[90%] h-[44vw] xl:h-[22vw] bg_paper flex_center flex-col text-center">
-                    <div class="w-[8vw] xl:w-[3vw] relative">
-                        <img src="./static/images/svg/metamask_logo.svg" alt="" class="w-full h-auto object-contain">
+                <div class="w-full  lg:w-[50%]  flex items-center flex-col   stickyside">
+                    <div class="w-[80%] lg:w-[80%] ">
+                     <img src="./static/images/How_tobuy.png" alt="" class="w-full h-auto object-contain ">
                     </div>
-                    <h2 class="text-white uppercase  medium_stroke text-[4vw] xl:text-[2vw]">dowload extension</h2>
-                    <p class="w-[70%] text-[2vw] xl:text-[1vw]">Download and install metamask on 
-                        the appstore, or, alterative if you’re on desktop download the browser extension</p>
+                    <div class="w-[90%]">
+                     <img src="./static/images/Heli.png" alt="" class="w-full h-auto object-contain">
+                    </div>
+                 </div>
+
+                 <div class="relative w-full lg:w-[50%] flex_center flex-col  max-lg:gap-[2vw] gap-[2vw]">
+
+                    <!-- map1 -->
+                    <div class="w-[90%] h-[44vw] xl:h-[22vw] bg_paper flex_center flex-col text-center">
+                        <div class="w-[8vw] xl:w-[3vw] relative">
+                            <img src="./static/images/svg/metamask_logo.svg" alt="" class="w-full h-auto object-contain">
+                        </div>
+                        <h2 class="text-white uppercase  medium_stroke text-[4vw] xl:text-[2vw]">dowload extension</h2>
+                        <p class="w-[70%] text-[2vw] xl:text-[1vw]">Download and install metamask on 
+                            the appstore, or, alterative if you’re on desktop download the browser extension</p>
+                    </div>
+    
+                    <!-- map2 -->
+                    <div class="w-[90%] h-[44vw] xl:h-[22vw] bg_paper flex_center flex-col text-center">
+                        <div class="w-[8vw] xl:w-[3vw] relative">
+                            <img src="./static/images/secure.png" alt="" class="w-full h-auto object-contain">
+                        </div>
+                        <h2 class="text-white uppercase  medium_stroke text-[4vw] xl:text-[2vw]">secure your bnb</h2>
+                        <p class="w-[70%] text-[2vw] xl:text-[1vw]">Download and install metamask on 
+                            the appstore, or, alterative if you’re on desktop download the browser extension</p>
+                    </div>
+                    
+                    <!-- map3 -->
+                    <div class="w-[90%] h-[44vw] xl:h-[22vw] bg_paper flex_center flex-col text-center">
+                        <div class="w-[8vw] xl:w-[3vw] relative">
+                            <img src="./static/images/buy_nuts.png" alt="" class="w-full h-auto object-contain">
+                        </div>
+                        <h2 class="text-white uppercase  medium_stroke text-[4vw] xl:text-[2vw]">buy some $nutz</h2>
+                        <p class="w-[70%] text-[2vw] xl:text-[1vw]">go to pancakeswap and paste the address to swap your bnb to $nutz</p>
+                    </div>
+    
+                    <!-- map4 -->
+                    <div class="w-[90%] h-[44vw] xl:h-[22vw] bg_paper flex_center flex-col text-center">
+                        <div class="w-[8vw] xl:w-[3vw] relative">
+                            <img src="./static/images/add_wallet.png" alt="" class="w-full h-auto object-contain">
+                        </div>
+                        <h2 class="text-white uppercase  medium_stroke text-[4vw] xl:text-[2vw]">add to your wallet</h2>
+                        <p class="w-[70%] text-[2vw] xl:text-[1vw]">now you’re all set! welcome to 
+                            the nutz pad world!</p>
+                    </div>
+    
                 </div>
 
-                <!-- map2 -->
-                <div class="w-[90%] h-[44vw] xl:h-[22vw] bg_paper flex_center flex-col text-center">
-                    <div class="w-[8vw] xl:w-[3vw] relative">
-                        <img src="./static/images/secure.png" alt="" class="w-full h-auto object-contain">
-                    </div>
-                    <h2 class="text-white uppercase  medium_stroke text-[4vw] xl:text-[2vw]">secure your bnb</h2>
-                    <p class="w-[70%] text-[2vw] xl:text-[1vw]">Download and install metamask on 
-                        the appstore, or, alterative if you’re on desktop download the browser extension</p>
-                </div>
-                
-                <!-- map3 -->
-                <div class="w-[90%] h-[44vw] xl:h-[22vw] bg_paper flex_center flex-col text-center">
-                    <div class="w-[8vw] xl:w-[3vw] relative">
-                        <img src="./static/images/buy_nuts.png" alt="" class="w-full h-auto object-contain">
-                    </div>
-                    <h2 class="text-white uppercase  medium_stroke text-[4vw] xl:text-[2vw]">buy some $nutz</h2>
-                    <p class="w-[70%] text-[2vw] xl:text-[1vw]">go to pancakeswap and paste the address to swap your bnb to $nutz</p>
-                </div>
-
-                <!-- map4 -->
-                <div class="w-[90%] h-[44vw] xl:h-[22vw] bg_paper flex_center flex-col text-center">
-                    <div class="w-[8vw] xl:w-[3vw] relative">
-                        <img src="./static/images/add_wallet.png" alt="" class="w-full h-auto object-contain">
-                    </div>
-                    <h2 class="text-white uppercase  medium_stroke text-[4vw] xl:text-[2vw]">add to your wallet</h2>
-                    <p class="w-[70%] text-[2vw] xl:text-[1vw]">now you’re all set! welcome to 
-                        the nutz pad world!</p>
-                </div>
-
-            </div>
+            </div> 
+          
 
           </section>
 
