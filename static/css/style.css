@@ -281,14 +281,14 @@ aside {
 }
 
 /* hero */
-.buy{
+.buy_animation{
   animation: bounce 2s ease infinite;
 }
-.buy:hover{
+.buy_animation:hover{
   animation-play-state: paused;
 }
 
-.buy:hover img{
+.buy_animation:hover img{
   transform: scale(1.1) translateY(-10px);
   -webkit-transform: scale(1.1) translateY(-10px);
   -moz-transform: scale(1.1) translateY(-10px);
