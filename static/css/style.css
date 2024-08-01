@@ -280,6 +280,23 @@ aside {
   background-repeat: no-repeat;
 }
 
+/* hero */
+.buy{
+  animation: bounce 2s ease infinite;
+}
+.buy:hover{
+  animation-play-state: paused;
+}
+
+.buy:hover img{
+  transform: scale(1.1) translateY(-10px);
+  -webkit-transform: scale(1.1) translateY(-10px);
+  -moz-transform: scale(1.1) translateY(-10px);
+  -ms-transform: scale(1.1) translateY(-10px);
+  -o-transform: scale(1.1) translateY(-10px);
+}
+
+
 /* about */
 .about_title_stroke{
   -webkit-text-stroke: .25vw #6D1500;
@@ -690,8 +707,8 @@ aside {
 
 
 .rotate_animation{
-  animation: rotate_animation 10s linear infinite;
-  -webkit-animation: rotate_animation 10s linear infinite;
+  animation: rotate_animation 18s linear infinite;
+  -webkit-animation: rotate_animation 18s linear infinite;
 }
 
 @keyframes rotate_animation {
@@ -711,11 +728,32 @@ aside {
 }
 }
 
+@keyframes bounce {
+  70% {
+    transform: translateY(0);
+  }
+  80% {
+    transform: translateY(-7.5%);
+  }
+  90% {
+    transform: translateY(0);
+  }
+  95% {
+    transform: translateY(-3.5%);
+  }
+  97% {
+    transform: translateY(0);
+  }
+  99% {
+    transform: translateY(-1.5%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
 
 
 /* cards */
-
-
 /* card memes */ 
 .card_container {
   position: relative;
