@@ -224,15 +224,10 @@ aside {
 .menu_drop li a span{
   z-index: 1;
   position: relative; 
- 
-  /* -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;  */
+  
   background: linear-gradient(180deg, #FBD544 41.75%, #FC940F 65.71%); 
-  /* color: transparent;    */
   -webkit-background-clip: text;
   -webkit-text-fill-color: #0000;
-  /* display: inline; */
 }
 
 .menu_drop li a::after {
