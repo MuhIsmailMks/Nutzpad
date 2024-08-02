@@ -284,7 +284,11 @@ aside {
 }
 
 .hero_link_animation:hover img{
-  transform: scale(1.1) translateY(-10px); 
+  transform: scale(1.1) translateY(-10px);
+  -webkit-transform: scale(1.1) translateY(-10px);
+  -moz-transform: scale(1.1) translateY(-10px);
+  -ms-transform: scale(1.1) translateY(-10px);
+  -o-transform: scale(1.1) translateY(-10px);
 }
 
 .hero_link_animation .alert .speech{
@@ -332,6 +336,9 @@ aside {
     left: -20px;
   } 
 
+  .hero_link_animation .alert .speech{
+    z-index: -9999; 
+  }
 
 .hero_link_animation:hover .alert .speech{
   transform: scale(1);
@@ -339,6 +346,8 @@ aside {
   -moz-transform: scale(1);
   -ms-transform: scale(1);
   -o-transform: scale(1);
+
+  z-index: 1;
 }
 
 
