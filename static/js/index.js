@@ -17,6 +17,12 @@ close_menu.addEventListener('click', () => {
     menu_drop.classList.remove('active')
 })
 
+menu_drop.addEventListener('click', (e) => {
+    // if (e.target.tagName === 'A') {
+    //     e.preventDefault(); 
+    //     menu_drop.classList.remove('active');
+    // }
+});
 
 
 // swiper js
@@ -76,8 +82,6 @@ const animations = [
     { selector: ".token2", duration: 4000, x: -150, y:200},  
     { selector: ".token3", duration: 4000, x: 150, y:-200},  
     { selector: ".token4", duration: 4000, x: -150, y:-200},  
-  
-    // { selector: ".stickyside", duration: 6000,   y:600},  
 
     { selector: ".image_roadmap_title", duration: 4000, x: 0, y:200},  
     { selector: ".image_roadmap", duration: 4000, x: 0, y:300},  
