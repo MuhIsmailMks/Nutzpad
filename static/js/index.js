@@ -7,6 +7,7 @@ AOS.init({
 const menu_btn = document.getElementById('menu_btn');
 const close_menu = document.getElementById('close_menu');
 const menu_drop = document.querySelector('.menu_drop');
+const links = document.querySelectorAll('.menu_drop li a');
 
 menu_btn.addEventListener('click', () => {
     menu_btn.classList.toggle('active')
@@ -17,13 +18,14 @@ close_menu.addEventListener('click', () => {
     menu_drop.classList.remove('active')
 })
 
-menu_drop.addEventListener('click', (e) => {
-    // if (e.target.tagName === 'A') {
-    //     e.preventDefault(); 
-    //     menu_drop.classList.remove('active');
-    // }
-});
-
+links.forEach(link => {
+    link.addEventListener('click', () => { 
+      menu_drop.classList.remove('active');
+      setTimeout(() => { 
+      }, 500);
+    });
+  }); 
+  
 
 // swiper js
 const swiper1 = new Swiper('#swiper1', {
@@ -198,7 +200,7 @@ window.addEventListener('DOMContentLoaded', () => {
         './static/images/meme/browser5.png', 
         './static/images/meme/browser6.jpg', 
         './static/images/meme/browser6.png', 
-        './static/images/meme/gallery1.jpg', 
+        './static/images/meme/gallery1.png', 
         './static/images/meme/gallery2.png', 
         './static/images/meme/token_right.jpg', 
     ];
@@ -289,4 +291,6 @@ window.addEventListener('DOMContentLoaded', () => {
       popUp_image.classList.add('hidden')
     })
  
-})
+});
+
+ 
